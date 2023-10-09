@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   get("/venues/:venue_id", { :controller => "venues", :action => "show" })
 
   post("/update_venue/:venue_id", { :controller => "venues", :action => "update" })
-  get("/delete_venue/:id_to_delete", { :controller => "venues", :action => "destroy" })
+  get("/delete_venue/:venue_id", { :controller => "venues", :action => "destroy" })
   
   post("/insert_comment_record", { :controller => "comments", :action => "create" })
 end
